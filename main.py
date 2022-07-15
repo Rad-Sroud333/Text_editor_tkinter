@@ -15,11 +15,11 @@ win.title('BHAND EDITOR')
 main_menu=tk.Menu(win)
 win.config(menu=main_menu)
 
-new=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\new.png")
-save=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\open.png")
-opens=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\save.png")
-save_as=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\save_as.png")
-exit=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\exit.png")
+new=tk.PhotoImage(file=r"icons2\icons2\new.png")
+save=tk.PhotoImage(file=r"icons2\icons2\open.png")
+opens=tk.PhotoImage(file=r"icons2\icons2\save.png")
+save_as=tk.PhotoImage(file=r"icons2\icons2\save_as.png")
+exit=tk.PhotoImage(file=r"icons2\icons2\exit.png")
 
 path=''
 def new_func(event=None):
@@ -109,11 +109,11 @@ file.add_command(label="Exit",image=exit,compound='left',accelerator='Ctrl+Q',co
 
 main_menu.add_cascade(label='file',menu=file)
 
-copy=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\copy.png")
-cut=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\cut.png")
-paste=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\paste.png")
-clear=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\clear_all.png")
-find=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\find.png")
+copy=tk.PhotoImage(file=r"icons2\icons2\copy.png")
+cut=tk.PhotoImage(file=r"icons2\icons2\cut.png")
+paste=tk.PhotoImage(file=r"icons2\icons2\paste.png")
+clear=tk.PhotoImage(file=r"icons2\icons2\clear_all.png")
+find=tk.PhotoImage(file=r"icons2\icons2\find.png")
 
 def find_dialog(event=None):
 
@@ -182,8 +182,8 @@ edit.add_command(label="Find",image=find,compound='left',accelerator='Ctrl+F',co
 
 main_menu.add_cascade(label='Edit',menu=edit)
 
-tool_bar1=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\tool_bar.png")
-status_bar1=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\status_bar.png")
+tool_bar1=tk.PhotoImage(file=r"icons2\icons2\tool_bar.png")
+status_bar1=tk.PhotoImage(file=r"icons2\icons2\status_bar.png")
 
 view=tk.Menu(main_menu,tearoff=False)
 
@@ -220,12 +220,12 @@ view.add_checkbutton(label="Status Bar",variable=status_bar_var,image=status_bar
 main_menu.add_cascade(label="View",menu=view)
 
 
-light=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\light_default.png")
-light_plus=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\light_plus.png")
-night_blue=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\night_blue.png")
-red=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\red.png")
-dark=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\dark.png")
-monokai=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\monokai.png")
+light=tk.PhotoImage(file=r"icons2\icons2\light_default.png")
+light_plus=tk.PhotoImage(file=r"icons2\icons2\light_plus.png")
+night_blue=tk.PhotoImage(file=r"icons2\icons2\night_blue.png")
+red=tk.PhotoImage(file=r"icons2\icons2\red.png")
+dark=tk.PhotoImage(file=r"icons2\icons2\dark.png")
+monokai=tk.PhotoImage(file=r"icons2\icons2\monokai.png")
 
 colour_theme={
              'Light':('#0000000','#ffffff'),
@@ -300,7 +300,7 @@ def file_folder_sorter():
           return
 
 
-file_sorter_image=tk.PhotoImage(file=r"C:\Users\91935\PycharmProjects\pythonProject9\file_folder_sorter1.png")
+file_sorter_image=tk.PhotoImage(file=r"icons2\icons2\find.png")
 file_soter=tk.Button(tool_bar,image=file_sorter_image,command=file_folder_sorter)
 file_soter.grid(row=0,column=21)
 
@@ -321,37 +321,37 @@ font_size.grid(row=0,column=3,padx=4,pady=4)
 
 
 bold_button_variable=tk.StringVar()
-bold_button_img=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\bold.png")
+bold_button_img=tk.PhotoImage(file=r"icons2\icons2\bold.png")
 bold_text_button=tk.Button(tool_bar,image=bold_button_img,textvariable=bold_button_variable)
 bold_text_button.grid(row=0,column=5,padx=4,pady=4)
 
 italic_button_variable=tk.StringVar()
-italic_button_img=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\italic.png")
+italic_button_img=tk.PhotoImage(file=r"icons2\icons2\italic.png")
 italic_text_button=tk.Button(tool_bar,image=italic_button_img,textvariable=italic_button_variable)
 italic_text_button.grid(row=0,column=7,padx=4,pady=4)
 
 underline_button_variable=tk.StringVar()
-underline_button_img=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\underline.png")
+underline_button_img=tk.PhotoImage(file=r"icons2\icons2\underline.png")
 underline_text_button=tk.Button(tool_bar,image=underline_button_img,textvariable=underline_button_variable)
 underline_text_button.grid(row=0,column=9,padx=4,pady=4)
 
 fontcolor_button_variable=tk.StringVar()
-fontcolor_button_img=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\font_color.png")
+fontcolor_button_img=tk.PhotoImage(file=r"icons2\icons2\font_color.png")
 fontcolor_text_button=tk.Button(tool_bar,image=fontcolor_button_img,textvariable=fontcolor_button_variable)
 fontcolor_text_button.grid(row=0,column=11,padx=4,pady=4)
 
 align_left_button_variable=tk.StringVar()
-align_left_button_img=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\align_left.png")
+align_left_button_img=tk.PhotoImage(file=r"icons2\icons2\align_left.png")
 align_left_text_button=tk.Button(tool_bar,image=align_left_button_img,textvariable=align_left_button_variable)
 align_left_text_button.grid(row=0,column=15,padx=4,pady=4)
 
 align_right_button_variable=tk.StringVar()
-align_right_button_img=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\align_right.png")
+align_right_button_img=tk.PhotoImage(file=r"icons2\icons2\align_right.png")
 align_right_button=tk.Button(tool_bar,image=align_right_button_img,textvariable=align_right_button_variable)
 align_right_button.grid(row=0,column=17,padx=4,pady=4)
 
 align_center_button_variable=tk.StringVar()
-align_center_button_img=tk.PhotoImage(file=r"C:\Users\91935\Downloads\icons2\icons2\align_center.png")
+align_center_button_img=tk.PhotoImage(file=r"icons2\icons2\align_center.png")
 align_center_text_button=tk.Button(tool_bar,image=align_center_button_img,textvariable=align_center_button_variable)
 align_center_text_button.grid(row=0,column=19,padx=4,pady=4)
 
