@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 win=tk.Tk()
-win.title('BHANDS_EDITOR')
+win.title('TEXT_EDITOR')
 #create label
 
 name_label=ttk.Label(win,text='enter ur name: ')
